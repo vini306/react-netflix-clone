@@ -1,4 +1,4 @@
-import styled from  'styled-components/macro';
+import styled from 'styled-components/macro';
 
 export const Item = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const Item = styled.div`
 export const Inner = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: ${({direction}) => direction };
+  flex-direction: ${({ direction }) => direction};
   justify-content: space-space-between;
   max-width: 1100px;
 
@@ -57,4 +57,10 @@ export const Image = styled.img`
   height: auto;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  @media(max-width: 1000px){
+    ${Item}:last-of-type h2 {  
+      margin-bottom: 50px;
+    }
+  }
+`;
