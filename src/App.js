@@ -1,6 +1,7 @@
 import React from 'react';
 import jumboData from  './fixtures/jumbo.json';
 import Jumbrotron from './components/jumbotron';
+
 export default function App() {
   return (
     <div className="App">
